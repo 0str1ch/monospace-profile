@@ -303,10 +303,20 @@
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
-
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="file:///Macintosh HD/Users/0str1ch/Documents/javascript/smoothscroll.js"></script>
-
+<script>              $('#scotch-panel').scotchPanel({
+                    containerSelector: 'body',
+                    direction: 'right',
+                    duration: 300,
+                    transition: 'ease',
+                    clickSelector: '.toggle-panel',
+                    distanceX: '70%',
+                    enableEscapeKey: true
+                });</script>
 
 </body>
 
