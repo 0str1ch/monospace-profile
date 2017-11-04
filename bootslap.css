@@ -398,6 +398,11 @@ ul.list {
     text-decoration: none
 }
 
+.neg {
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+}
+
 .digital:before,
 .project:hover .__title:after {
     content: "";
