@@ -1,0 +1,9 @@
+{
+  "name": "jeremymade.com",
+  "short_name": "jsmith",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#2a2a2a"
+}
