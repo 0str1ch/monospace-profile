@@ -230,6 +230,10 @@ Margin/padding classes to space your content out.
     padding-top: 2em;
 }
 
+.w100 {
+	width: 100%;
+}
+
 .am {
     margin-left: auto;
     margin-right: auto;
@@ -283,6 +287,10 @@ Margin/padding classes to space your content out.
 
 .mt2 {
     margin-top: 2em;
+}
+
+.mb2 {
+	margin-bottom: 2em;
 }
 
 .pb2 {
@@ -432,6 +440,10 @@ ul.list {
     background-image: linear-gradient(#47eaff, #47ffa6);
 }
 
+code[class*=language-], pre[class*=language-] {
+	font-family: 'Roboto Mono', monospace !important;
+}
+
 footer a {
     text-decoration: none
 }
@@ -505,6 +517,10 @@ Responsive Layout
 .thirds {
     padding-left: 0.75em;
     padding-right: 0.75em;
+}
+
+.h100 {
+	height: 100%;
 }
 
 .full100 {
