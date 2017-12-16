@@ -5,6 +5,12 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+	-webkit-tap-highlight-color: transparent; 
+} 
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
