@@ -11,6 +11,8 @@
 	-webkit-tap-highlight-color: transparent; 
 } 
 
+input:focus {outline:none;}
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
