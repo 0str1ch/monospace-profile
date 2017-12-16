@@ -11,6 +11,10 @@
 	-webkit-tap-highlight-color: transparent; 
 } 
 
+#my-menu:not( .mm-menu ) {
+   display: none;
+}
+
 button {outline:none !important;}
 
 .hamburger {
