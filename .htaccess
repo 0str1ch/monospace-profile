@@ -1,4 +1,4 @@
-AddCharset UTF-8 .html
+
 
 <IfModule mod_expires.c>
 # Enable expirations
