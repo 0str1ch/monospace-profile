@@ -13,6 +13,7 @@
 
 #my-menu:not( .mm-menu ) {
    display: none;
+	height: 0px;
 }
 
 button {outline:none !important;}
