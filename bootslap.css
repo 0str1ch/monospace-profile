@@ -528,7 +528,7 @@ Responsive Layout
 .thirds a {
     position: relative;
     margin-bottom: 2em;
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 
 .thirds:hover {
