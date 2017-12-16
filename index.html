@@ -49,6 +49,11 @@ This is BootSlap, an open source framework for modular development workflows.
         <div class="pt2">
             <div class="outer">
                 <div class="container">
+					<button id="my-icon" class="hamburger hamburger--collapse" type="button">
+   <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+   </span>
+</button>
                     <header class="mt2">
                         <h2 class="h4 nmb nmt inline-block">
                             <a href="/">jeremysmith</a>
@@ -76,7 +81,6 @@ This is BootSlap, an open source framework for modular development workflows.
 								</svg>
 							</a>
                         </div>
-						<a href="#my-menu">Open the menu</a>
 						<nav id="my-menu">
    <ul>
       <li><a href="/">Home</a></li>
@@ -305,7 +309,24 @@ https://themeforest.net/item/jupiter-multipurpose-responsive-theme/5177775
    $(document).ready(function() {
       $("#my-menu").mmenu({
          // options
-      }, {
+      }, 
+		var $icon = $("#my-icon");
+var API = $menu.data( "mmenu" );
+
+$icon.on( "click", function() {
+   API.open();
+});
+
+API.bind( "open:finish", function() {
+   setTimeout(function() {
+      $icon.addClass( "is-active" );
+   }, 100);
+});
+API.bind( "close:finish", function() {
+   setTimeout(function() {
+      $icon.removeClass( "is-active" );
+   }, 100);				  
+						  {
          // configuration
          offCanvas: {
             pageSelector: "#root"
