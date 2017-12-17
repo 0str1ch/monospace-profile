@@ -206,6 +206,7 @@ a:focus {
 .box-link {
 	color: #0069ff;
 	padding-left: 0 !important;
+	margin
 }
 
 .box-link:hover {
@@ -332,6 +333,10 @@ Margin/padding classes to space your content out.
 
 .pb2 {
     padding-bottom: 2em;
+}
+
+.pl15 {
+	padding-left: 1.5em;
 }
 
 .inline-block {
@@ -544,11 +549,11 @@ Responsive Layout
     position: relative;
 }
 
-.thirds a {
+/*.thirds a {
     position: relative;
     margin-bottom: 2em;
     padding-left: 1.5em;
-}
+}*/
 
 .thirds:hover {
     text-decoration: none;
