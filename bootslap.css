@@ -25,16 +25,17 @@ html {
 }
 
 #contrast h1, #contrast h2, #contrast h3 {
-	color: white;
-}
-
-#contrast p {
 	color: hsla(0,0%,100%,.8);
 }
 
-hr {
-	display: none !important;
+#contrast p {
+	color: #fff;
+	font-size: 1.5rem;
 }
+
+/*hr {
+	display: none !important;
+}*/
 
 
 /*!
