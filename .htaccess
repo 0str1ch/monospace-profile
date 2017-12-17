@@ -15,6 +15,14 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.jeremymade.com [NC]
 RewriteRule ^(.*)$ http://jeremymade.com/$1 [L,R=301]
 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
 
 AddCharset UTF-8 .html
 
