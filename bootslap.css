@@ -359,9 +359,9 @@ hr {
     display: block;
     border: 0;
     margin: 0;
-    height: 6px;
+    height: 1px;
     width: 100%;
-    background-color: currentColor;
+    background-color: #e0e0e0;
     color: inherit
 }
 
