@@ -504,7 +504,7 @@ body {
 }
 
 .focus:focus {
-    outline: 2px dashed #555
+    outline: 2px dashed currentColor
 }
 
 /*!
