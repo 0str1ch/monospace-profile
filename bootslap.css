@@ -549,6 +549,11 @@ Responsive Layout
     position: relative;
 }
 
+.wbl {
+    word-wrap: break-word;
+    max-width: 90%;
+}
+
 /*.thirds a {
     position: relative;
     margin-bottom: 2em;
