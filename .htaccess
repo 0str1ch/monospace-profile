@@ -1,10 +1,11 @@
-Options -MultiViews
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+</IfModule>
 
 RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
