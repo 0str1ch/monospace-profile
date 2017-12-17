@@ -15,7 +15,7 @@ html {
 }
 
 #band {
-    background: #0368ff;
+    background: #005fe6;
     height: 6px;
     width: 100%;
 }
@@ -455,7 +455,7 @@ ul.list {
     top: 0;
     bottom: 0;
     width: 6px;
-    background: linear-gradient(180deg,#66a5ff,#0069ff);
+    background: #005fe6;
 }
 
 code[class*=language-], pre[class*=language-] {
