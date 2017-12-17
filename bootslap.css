@@ -29,7 +29,7 @@ html {
 }
 
 #contrast p {
-	color: rgba(255, 255, 255, 0.92);
+	color: hsla(0,0%,100%,.8);
 }
 
 hr {
