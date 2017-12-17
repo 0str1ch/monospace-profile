@@ -31,14 +31,15 @@ html {
 #contrast p {
 	color: #fff;
 	font-size: 1.5rem;
+	padding-right: 1.5rem;
 }
 
-@media (min-width:50em) {
-	#contrast p {
-	color: #fff;
-	font-size: 1.5rem;
-	padding-right: 10rem;
-	}}
+@media (min-width: 70em) {
+#contrast p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-right: 22rem;
+}}
 
 /*hr {
 	display: none !important;
