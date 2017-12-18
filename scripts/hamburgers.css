@@ -16,9 +16,6 @@
 	height: 0px;
 }
 
-.hamburger .hamburger--arrow .is-active {
-	transform: translateX(-22rem);
-}
 
 button {outline:none !important;}
 
