@@ -200,7 +200,7 @@ a {
 }
 
 a:focus {
-    outline: 2px dashed currentColor
+    outline: 0px dashed currentColor
 }
 
 .box-link {
@@ -478,7 +478,7 @@ ul.list {
     top: 0;
     bottom: 0;
     width: 6px;
-    background: #005fe6;
+    background: #e0e0e0;
 }
 
 code[class*=language-], pre[class*=language-] {
@@ -527,7 +527,7 @@ body {
 }
 
 .focus:focus {
-    outline: 2px dashed currentColor
+    outline: 0px dashed currentColor
 }
 
 /*!
