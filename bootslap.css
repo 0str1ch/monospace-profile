@@ -206,7 +206,7 @@ a:focus {
 .box-link {
 	color: #0069ff;
 	padding-left: 0 !important;
-	margin
+	margin: auto;
 }
 
 .box-link:hover {
