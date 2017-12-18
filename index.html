@@ -40,6 +40,68 @@ This is BootSlap, an open source framework for modular development workflows.
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="manifest" href="/manifest.json">
 
+	<!-- Navigation Config -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var $menu = $("#my-menu").mmenu({
+                "extensions": [
+                    "pagedim-black",
+                    "fx-listitems-fade",
+					"listview-justify",
+					"border-none"
+                ],
+
+                //   options
+                offCanvas: {
+                    position: "right",
+                    zposition: "front"
+                },
+				
+				"navbars": [
+            {
+               "position": "bottom",
+               "content": [
+                  "<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
+				  "<a class='fa fa-facebook' href='#/'></a>"
+               ]
+            }
+         ],
+				navbar: {
+					add: false
+				},
+				backButton: {
+                    close: "true"
+                },
+				"setSelected": {
+            		"hover": true,
+					"current": true
+         }
+            });
+            var $icon = $("#my-icon");
+            var API = $menu.data("mmenu");
+
+            $icon.on("click", function() {
+                API.open();
+            });
+
+            API.bind("open:finish", function() {
+                setTimeout(function() {
+                    $icon.addClass("is-active");
+                }, 100);
+            });
+            API.bind("close:finish", function() {
+                setTimeout(function() {
+                    $icon.removeClass("is-active");
+                }, 100);
+            }); {
+                // configuration
+                offCanvas: {
+                    pageSelector: "#root"
+                }
+            };
+        });
+    </script>
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -306,68 +368,7 @@ This is BootSlap, an open source framework for modular development workflows.
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.3.1/lazyload.min.js"></script>
-    <script async src="https://cdn.jsdelivr.net/npm/prismjs@1.8.4/prism.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var $menu = $("#my-menu").mmenu({
-                "extensions": [
-                    "pagedim-black",
-                    "fx-listitems-fade",
-					"listview-justify",
-					"border-none"
-                ],
-
-                //   options
-                offCanvas: {
-                    position: "right",
-                    zposition: "front"
-                },
-				
-				"navbars": [
-            {
-               "position": "bottom",
-               "content": [
-                  "<a class='fa fa-envelope' href='mailto:hello@smithed,xyz/'></a>",
-				  "<a class='fa fa-facebook' href='#/'></a>"
-               ]
-            }
-         ],
-				navbar: {
-					add: false
-				},
-				backButton: {
-                    close: "true"
-                },
-				"setSelected": {
-            		"hover": true,
-					"current": true
-         }
-            });
-            var $icon = $("#my-icon");
-            var API = $menu.data("mmenu");
-
-            $icon.on("click", function() {
-                API.open();
-            });
-
-            API.bind("open:finish", function() {
-                setTimeout(function() {
-                    $icon.addClass("is-active");
-                }, 100);
-            });
-            API.bind("close:finish", function() {
-                setTimeout(function() {
-                    $icon.removeClass("is-active");
-                }, 100);
-            }); {
-                // configuration
-                offCanvas: {
-                    pageSelector: "#root"
-                }
-            };
-        });
-    </script>
 
     <script>
         new LazyLoad();
