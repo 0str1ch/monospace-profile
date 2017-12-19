@@ -21,7 +21,8 @@ html {
 }
 
 #contrast {
-	background: linear-gradient(180deg,#66a5ff,#0069ff);
+	/*background: linear-gradient(180deg,#66a5ff,#0069ff);*/
+	background: linear-gradient(45deg,#ff4100,#ff4100 24%,#fe6005 0,#fe6005 67%,#ff4100 0,#ff4100);
 }
 
 #contrast h1, #contrast h2, #contrast h3 {
