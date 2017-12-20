@@ -24,6 +24,8 @@ RewriteRule . /index.html [L]
 
 AddCharset UTF-8 .html
 
+ErrorDocument 404 /error_pages/404.html
+
 <IfModule mod_expires.c>
 # Enable expirations
 ExpiresActive On 
